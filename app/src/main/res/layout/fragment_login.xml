@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.LoginFragment">
+
+   <LinearLayout
+       android:gravity="center"
+       android:layout_gravity="center"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <EditText
+           android:id="@+id/etPresensi"
+           android:hint="Nomor Presensi"
+           android:inputType="text"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"/>
+       <EditText
+           android:id="@+id/etPassword"
+           android:hint="Password"
+           android:inputType="textPassword"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"/>
+       <Button
+           android:layout_margin="10dp"
+           android:id="@+id/btLogin"
+           android:text="Login"
+           android:background="@color/putih"
+           android:layout_width="300dp"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+</FrameLayout>

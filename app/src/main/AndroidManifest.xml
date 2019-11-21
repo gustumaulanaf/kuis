@@ -3,15 +3,39 @@
     package="com.project.kuis">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HasilActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity android:name=".KuisActivity">
+        <activity android:name=".LoginActivity"
+            android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".ListMateriActivity"
+            android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".PDFActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ListVideoActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".VideoActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".KuisActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".HasilActivity"
+            android:theme="@style/NoActionBar"
+            android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
