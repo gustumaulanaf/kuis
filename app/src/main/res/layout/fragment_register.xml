@@ -22,6 +22,7 @@
             android:id="@+id/etNewNama"
             android:hint="Nama"
             android:layout_width="300dp"
+            android:inputType="text"
             android:layout_height="wrap_content"/>
         <EditText
             android:id="@+id/etNewPassword"

@@ -8,10 +8,19 @@
     android:background="@color/colorPrimary"
     android:layout_height="match_parent"
     tools:context=".ListVideoActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
         android:text="Daftar Video"
         android:textSize="50sp"
-        android:textColor="@color/putih"
+        android:textColor="@color/hijautua"
         android:textStyle="bold"
         android:layout_margin="20dp"
         android:layout_width="wrap_content"
@@ -37,4 +46,6 @@
         android:text="Video 3"
         android:layout_width="200dp"
         android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

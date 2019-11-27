@@ -13,6 +13,7 @@ class HasilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hasil)
+        val actionBar = supportActionBar
         userDatabase = UserDatabase.getInstance(this)
         listuser = userDatabase.userDao()
             .login(SharedPrefUtil.getString("nopresensi")!!, SharedPrefUtil.getString("password")!!)

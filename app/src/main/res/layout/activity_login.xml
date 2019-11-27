@@ -4,9 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/kedua"
     android:gravity="center"
     tools:context=".LoginActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 <androidx.cardview.widget.CardView
     app:cardCornerRadius="10dp"
     android:layout_width="match_parent"
@@ -44,4 +53,6 @@
            android:layout_height="wrap_content"/>
    </LinearLayout>
 </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

@@ -11,43 +11,38 @@
 
     <TextView
         android:text="Daftar Materi"
-        android:textColor="@color/putih"
+        android:textColor="@color/hijautua"
         android:textSize="40sp"
         android:textStyle="bold"
         android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <Button
+    <ImageView
+        android:layout_gravity="right"
         android:id="@+id/btPengertian"
         android:text="Pengertian Perusahaan Jasa"
         android:textColor="@color/hitam"
-        android:background="@color/putih"
+        android:background="@drawable/pengertian"
         android:layout_width="300dp"
-        android:layout_margin="5dp"
-        android:layout_height="wrap_content"/>
-    <Button
+        android:layout_height="80dp"/>
+    <ImageView
+        android:layout_gravity="left"
         android:id="@+id/btKarakteristik"
-        android:text="Karakteristik PerusahaanJasa"
+        android:src="@drawable/karakteristik"
         android:textColor="@color/hitam"
-        android:background="@color/putih"
         android:layout_width="300dp"
-        android:layout_margin="5dp"
-        android:layout_height="wrap_content"/>
-    <Button
+        android:layout_height="80dp"/>
+    <ImageView
+        android:layout_gravity="right"
         android:id="@+id/btSiklus"
-        android:text="Siklus Akuntansi Perusahaan Jasa"
-        android:textColor="@color/hitam"
-        android:background="@color/putih"
+        android:background="@drawable/siklus"
         android:layout_width="300dp"
-        android:layout_margin="5dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="80dp"/>
 
-    <Button
+    <ImageView
+        android:layout_gravity="left"
         android:id="@+id/btJenis"
-        android:text="Jenis Transaksi Akuntansi Perusahaan Jasa"
-        android:textColor="@color/hitam"
-        android:background="@color/putih"
+        android:background="@drawable/jenis"
         android:layout_width="300dp"
-        android:layout_margin="5dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="80dp"/>
 </LinearLayout>
