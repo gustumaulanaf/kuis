@@ -122,4 +122,9 @@
         android:textAllCaps="false" />
 </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/kedua"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
 </RelativeLayout>

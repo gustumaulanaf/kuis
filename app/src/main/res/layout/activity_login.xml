@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/kedua"
+    android:background="@color/colorPrimary"
     android:gravity="center"
     tools:context=".LoginActivity">
     <androidx.core.widget.NestedScrollView
@@ -55,4 +55,9 @@
 </androidx.cardview.widget.CardView>
     </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+    <ImageView
+        android:src="@mipmap/kedua"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
 </RelativeLayout>

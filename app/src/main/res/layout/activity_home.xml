@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/kedua"
+    android:background="@color/colorPrimary"
     tools:context=".HomeActivity">
 <androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/money" />
+            android:src="@drawable/logo" />
         <LinearLayout
             android:id="@+id/layoutMateri"
             android:layout_margin="5dp"
@@ -29,7 +29,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:src="@drawable/materi"
+                android:src="@mipmap/materi"
                 android:layout_width="50dp"
                 android:layout_height="50dp"/>
             <TextView
@@ -48,7 +48,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:src="@drawable/video"
+                android:src="@mipmap/video"
                 android:layout_width="50dp"
                 android:layout_height="50dp"/>
             <TextView
@@ -67,7 +67,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:src="@drawable/bank_soal"
+                android:src="@mipmap/bank_soal"
                 android:layout_width="50dp"
                 android:layout_height="50dp"/>
             <TextView
@@ -86,7 +86,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:src="@drawable/kuis"
+                android:src="@mipmap/kuis"
                 android:layout_width="50dp"
                 android:layout_height="50dp"/>
             <TextView
@@ -105,7 +105,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:src="@drawable/keluar"
+                android:src="@mipmap/keluar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"/>
             <TextView
@@ -118,6 +118,9 @@
         </LinearLayout>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
-
-
-</LinearLayout>
+<ImageView
+    android:src="@mipmap/kedua"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"/>
+</RelativeLayout>

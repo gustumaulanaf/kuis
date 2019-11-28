@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/colorPrimary"
     android:layout_height="match_parent"
     tools:context=".ListMateriActivity">
-
+<LinearLayout
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <TextView
+        android:layout_gravity="center_horizontal"
         android:text="Daftar Materi"
         android:textColor="@color/hijautua"
         android:textSize="40sp"
@@ -22,27 +26,33 @@
         android:id="@+id/btPengertian"
         android:text="Pengertian Perusahaan Jasa"
         android:textColor="@color/hitam"
-        android:background="@drawable/pengertian"
+        android:background="@mipmap/pengertian"
         android:layout_width="300dp"
         android:layout_height="80dp"/>
     <ImageView
         android:layout_gravity="left"
         android:id="@+id/btKarakteristik"
-        android:src="@drawable/karakteristik"
+        android:src="@mipmap/karakteristik"
         android:textColor="@color/hitam"
         android:layout_width="300dp"
         android:layout_height="80dp"/>
     <ImageView
         android:layout_gravity="right"
         android:id="@+id/btSiklus"
-        android:background="@drawable/siklus"
+        android:background="@mipmap/siklus"
         android:layout_width="300dp"
         android:layout_height="80dp"/>
 
     <ImageView
         android:layout_gravity="left"
         android:id="@+id/btJenis"
-        android:background="@drawable/jenis"
+        android:background="@mipmap/jenis"
         android:layout_width="300dp"
         android:layout_height="80dp"/>
 </LinearLayout>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/kedua"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</RelativeLayout>

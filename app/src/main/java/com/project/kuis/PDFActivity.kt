@@ -31,7 +31,7 @@ class PDFActivity : AppCompatActivity() {
         pdfViewer.fromAsset(asset)
             .enableSwipe(true)
             .enableDoubletap(true)
-            .swipeVertical(true)
+            .swipeVertical(false)
             .defaultPage(1)
             .showMinimap(true)
             .enableAnnotationRendering(false)
